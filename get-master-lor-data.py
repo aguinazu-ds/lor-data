@@ -1,13 +1,13 @@
 import json
 import requests
+import api_token
 
-api_token = 'RGAPI-2a309c08-fd0c-4bbf-9359-5e84a73f2563'
-check = requests.get('https://americas.api.riotgames.com/lor/ranked/v1/leaderboards?api_key={}'.format(api_token))
+check = requests.get('https://americas.api.riotgames.com/lor/ranked/v1/leaderboards?api_key={}'.format(api_token.api_token_var))
 
 def get_ranked_info(region):
     ''' '''
     api_url_base = 'https://{}.api.riotgames.com/lor/ranked/v1/leaderboards'
-    api_url = '{}?api_key={}'.format(api_url_base.format(region),api_token)
+    api_url = '{}?api_key={}'.format(api_url_base.format(region),api_token.api_token_var)
     respuesta = requests.get(api_url)
 
     if respuesta.status_code == 200:
