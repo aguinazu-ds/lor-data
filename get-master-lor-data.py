@@ -17,11 +17,12 @@ def get_ranked_info(region):
 
 if check.status_code == 200:
     data_americas, data_europe, data_sea = get_ranked_info('americas'), get_ranked_info('europe'), get_ranked_info('sea')
-    with open('data/data_americas.json', 'w', encoding='utf-8') as f:
+    with open('data/master-leaderboard/data_americas.json', 'w', encoding='utf-8') as f:
         json.dump(data_americas, f, ensure_ascii=False, indent=4)
-    with open('data/data_europe.json', 'w', encoding='utf-8') as f:
+    with open('data/master-leaderboard/data_europe.json', 'w', encoding='utf-8') as f:
         json.dump(data_europe, f, ensure_ascii=False, indent=4)
-    with open('data/data_sea.json', 'w', encoding='utf-8') as f:
+    with open('data/master-leaderboard/data_sea.json', 'w', encoding='utf-8') as f:
         json.dump(data_sea, f, ensure_ascii=False, indent=4)
 else:
+    print(check.status_code)
     print('Revisa tu token API o ve si hay otro problema con los servidores de Riot')
