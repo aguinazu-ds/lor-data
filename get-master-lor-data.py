@@ -23,3 +23,5 @@ if check.status_code == 200:
         json.dump(data_europe, f, ensure_ascii=False, indent=4)
     with open('data/data_sea.json', 'w', encoding='utf-8') as f:
         json.dump(data_sea, f, ensure_ascii=False, indent=4)
+else:
+    print('Revisa tu token API o ve si hay otro problema con los servidores de Riot')
