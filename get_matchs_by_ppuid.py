@@ -26,4 +26,4 @@ def get_matchs_by_ppuid(ppuid, region):
     if respuesta.status_code == 200:
         return json.loads(respuesta.content.decode('utf-8'))
     else:
-        return print(respuesta.status_code)
+        return respuesta.status_code

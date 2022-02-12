@@ -1,12 +1,13 @@
-from codecs import ignore_errors
 import json
 import requests
-from ratelimit import limits
+from ratelimit import limits, RateLimitException, sleep_and_retry
 from api_token import api_token_var
 
 TWO_MINUTES = 120
+MAX_CALLS_PER_MINUTE= 100
 
-@limits(calls=100, period= TWO_MINUTES)
+@sleep_and_retry
+@limits(calls=MAX_CALLS_PER_MINUTE, period=TWO_MINUTES)
 def get_match_info_by_id(region, match_id):
     """"""
     api_url_base = 'https://{}.api.riotgames.com/lor/match/v1/matches/{}?api_key={}'
@@ -17,7 +18,8 @@ def get_match_info_by_id(region, match_id):
     if respuesta.status_code == 200:
         return json.loads(respuesta.content.decode('utf-8'))
     else:
-        raise Exception('API response: {}'.format(respuesta.status_code))
+        print('API response: {}'.format(respuesta.status_code))
+        return respuesta.status_code
 
 #print(get_match_info_by_id('americas', '6ce11b6c-fb64-433d-97f1-511a606f94b4'))
 # l = [
