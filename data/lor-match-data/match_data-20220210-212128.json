@@ -1,0 +1,822 @@
+[
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "6854a32d-3122-4d6a-af7f-98af621e56b0",
+            "participants": [
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                "IKTSUtW-6myP7_G-X5dfDGPrii9uyHu1kEbDdRa7zN6C_fgduxjYwO4vmwq9JZLaOOHpXgBtJ6y-VA"
+            ]
+        },
+        "info": {
+            "game_mode": "Constructed",
+            "game_type": "Normal",
+            "game_start_time_utc": "2022-02-08T05:50:55.2500026+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "643de44c-fac3-4fdb-9726-8865764b302f",
+                    "deck_code": "CECACAIEGQBAGBIECABAIBAHCEBQCBISDUXQKAIBAQNQCAYEBUAQIBJYAECQKDQCAECQ6EYEAEAQIEABAECTMAIEAUOQCBIFAM",
+                    "factions": [
+                        "faction_Piltover_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "IKTSUtW-6myP7_G-X5dfDGPrii9uyHu1kEbDdRa7zN6C_fgduxjYwO4vmwq9JZLaOOHpXgBtJ6y-VA",
+                    "deck_id": "c55e0cfc-9dbf-4f6a-aa9b-7e85cc1b11ee",
+                    "deck_code": "CQBQCAYDBUBQKCSYLOEACBAFAMAQKBQNAQAQCAYLAEBQGDYDAUFBUTSVAMCQGBAJCAAA",
+                    "factions": [
+                        "faction_BandleCity_Name",
+                        "faction_Noxus_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 41
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "5b3b0e46-aeb4-486b-b0b5-e053b478d1fc",
+            "participants": [
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                "rt7UWVlf78H6FkruWXjm_83WLKlnACCicwRwKmXYx3nT1aKINCegqdTLN29zJsnO0zwmNDmioQfZBA"
+            ]
+        },
+        "info": {
+            "game_mode": "Constructed",
+            "game_type": "Normal",
+            "game_start_time_utc": "2022-02-08T05:45:24.4338502+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "643de44c-fac3-4fdb-9726-8865764b302f",
+                    "deck_code": "CECACAIEGQBAGBIECABAIBAHCEBQCBISDUXQKAIBAQNQCAYEBUAQIBJYAECQKDQCAECQ6EYEAEAQIEABAECTMAIEAUOQCBIFAM",
+                    "factions": [
+                        "faction_Piltover_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "rt7UWVlf78H6FkruWXjm_83WLKlnACCicwRwKmXYx3nT1aKINCegqdTLN29zJsnO0zwmNDmioQfZBA",
+                    "deck_id": "56a6a9f4-7b2b-49cf-8287-2c9aef1430ec",
+                    "deck_code": "CICACBIGAEBAEAYDAQCAEBQWEATDYBIBAMBAYDZFFABACAIDDEAQEBR6AA",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Noxus_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 27
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "2fd9f9c3-751f-4c00-a379-3b7e3b351439",
+            "participants": [
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                "e0MkTSOGiSrmiCY78YgssWeN0JbiFh91VGWVn8_euaL0dIXqpTxK55WoXm8mtlfrSbqnrYnJGSE1Rw"
+            ]
+        },
+        "info": {
+            "game_mode": "Constructed",
+            "game_type": "Normal",
+            "game_start_time_utc": "2022-02-08T05:35:22.1649800+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "643de44c-fac3-4fdb-9726-8865764b302f",
+                    "deck_code": "CECQCAYBAIAQGBIEAICACCQOAMAQCAIGCQBQCBISDUXQEAIEAU4AEAIFB4JQIAIBAEVACAIFGYAQIBI5AECQKAY",
+                    "factions": [
+                        "faction_Freljord_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 1
+                },
+                {
+                    "puuid": "e0MkTSOGiSrmiCY78YgssWeN0JbiFh91VGWVn8_euaL0dIXqpTxK55WoXm8mtlfrSbqnrYnJGSE1Rw",
+                    "deck_id": "bd7b6f7c-1e20-43c4-90b8-2ff68296e076",
+                    "deck_code": "CMBAIBAEAEBAIBYGAQDQCFA4J5JWOAQBAUCAYBAEA4GTW3MKAEAA",
+                    "factions": [
+                        "faction_Piltover_Name",
+                        "faction_Shurima_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 0
+                }
+            ],
+            "total_turn_count": 27
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "634ede42-bc55-4500-80c0-d6d017923f5f",
+            "participants": [
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                "4elVdOgIOxIsIII8aSlcFdlml9y1cs1_ATv69w4RRfzM4fAlwupWaLO2G6UDIRd6GqjheVVfXi2S-Q"
+            ]
+        },
+        "info": {
+            "game_mode": "Constructed",
+            "game_type": "Normal",
+            "game_start_time_utc": "2022-02-08T05:26:43.0459526+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "643de44c-fac3-4fdb-9726-8865764b302f",
+                    "deck_code": "CECQCAYBAIAQGBIEAICACCQOAMAQCAIGCQBQCBISDUXQEAIEAU4AEAIFB4JQIAIBAEVACAIFGYAQIBI5AECQKAY",
+                    "factions": [
+                        "faction_Freljord_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                },
+                {
+                    "puuid": "4elVdOgIOxIsIII8aSlcFdlml9y1cs1_ATv69w4RRfzM4fAlwupWaLO2G6UDIRd6GqjheVVfXi2S-Q",
+                    "deck_id": "6ad4af1b-c9fc-4fae-a84f-170491a68afe",
+                    "deck_code": "CIBAIAYGAQDQQDYHAMER2IZNGM2DOPACAEBQSYQBAQEQ2AQBAMDASAQDBEJVK",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_MtTargon_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                }
+            ],
+            "total_turn_count": 35
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "aa99da0c-2fbc-4572-80f1-3b72c784747a",
+            "participants": [
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                "YIRzCaFs_OYgauGFKS0MBaWHbsUXQB64wm8KezczrqR4BblmSdlI-CobYyOPiQo-b0F05EYb2Cta2A"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-08T02:24:36.6495210+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CICQCAYGCEAQKBQFAIBAMGRLAMAQIAIQGQCAGBAFBUJBSAQBAECCOAIFAQGAGAIBAQWQCBAEA4AQKBQL",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "YIRzCaFs_OYgauGFKS0MBaWHbsUXQB64wm8KezczrqR4BblmSdlI-CobYyOPiQo-b0F05EYb2Cta2A",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_0",
+                    "deck_code": "CQDACAYFCAAQIAQPAECQUOQCAMBAKFACAUBAIBYDAEBAWDBSAMAQEAQFAIAQELBRAICQEFI2AA",
+                    "factions": [
+                        "faction_Ionia_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 52
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "3660d841-5577-48d8-b087-3fc64a56741f",
+            "participants": [
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                "YIRzCaFs_OYgauGFKS0MBaWHbsUXQB64wm8KezczrqR4BblmSdlI-CobYyOPiQo-b0F05EYb2Cta2A"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-08T02:19:27.9921645+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_0",
+                    "deck_code": "CQDACAYCAUAQGBIQAECAEDYBAUFDUAQFAICAOBABAIFQYMJSAQAQCARMAEBAEBIBAMBBIAQFAIKRUAA",
+                    "factions": [
+                        "faction_Ionia_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 1
+                },
+                {
+                    "puuid": "YIRzCaFs_OYgauGFKS0MBaWHbsUXQB64wm8KezczrqR4BblmSdlI-CobYyOPiQo-b0F05EYb2Cta2A",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CIDACAYABYAQIAACAECQMAICAIAAEBQDAEAAMCI5AMBAMFR2HYAQEAQAA4FAEAICAAEQEAIAEUZQ",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Demacia_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 0
+                }
+            ],
+            "total_turn_count": 21
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "f07a9828-a3f8-4fc0-8bed-6d959c2fb020",
+            "participants": [
+                "1cKBFjhB9k0eVLKWfk6bIEzjalzOlJtqofOvJo6hllX8rwxAmpqdmYJa9-sG7AoI-yQlrfxlHAQsZA",
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-08T01:59:32.1334452+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "1cKBFjhB9k0eVLKWfk6bIEzjalzOlJtqofOvJo6hllX8rwxAmpqdmYJa9-sG7AoI-yQlrfxlHAQsZA",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CICACBIJAYBACAQMGECAEAQDAYEASBIDBEERWIZT24AQCAICAICQEAIBAIBACAYJKU",
+                    "factions": [
+                        "faction_Ionia_Name",
+                        "faction_MtTargon_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 1
+                },
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CIDACAYABYAQIAACAECQMAIDAEAAMCI5AMBAMFR2HYBQEAACAYFACAICAADQEAIBAASQCAQGAU",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Demacia_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 0
+                }
+            ],
+            "total_turn_count": 29
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "8619aa54-ac0b-4bfe-a0f5-226ba2e6edef",
+            "participants": [
+                "1cKBFjhB9k0eVLKWfk6bIEzjalzOlJtqofOvJo6hllX8rwxAmpqdmYJa9-sG7AoI-yQlrfxlHAQsZA",
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-08T01:53:32.8751280+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "1cKBFjhB9k0eVLKWfk6bIEzjalzOlJtqofOvJo6hllX8rwxAmpqdmYJa9-sG7AoI-yQlrfxlHAQsZA",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CICACBIJAYBACAQMGECAEAQDAYEASBIDBEERWIZT24AQCAICAICQEAIBAIBACAYJKU",
+                    "factions": [
+                        "faction_Ionia_Name",
+                        "faction_MtTargon_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CICQCAYGCEAQKBQFAIBAMGRLAMAQIAIQGQCAGBAFBUJBSAQBAECCOAIFAQGAGAIBAQWQCBAEA4AQKBQL",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 26
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "88e6a22f-dff8-491c-bd0b-433b4b9958bd",
+            "participants": [
+                "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-08T01:35:01.7914952+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CECACAYFAMBAEAYDAQBQCBJHGU4AMAIDAIGA6JJIG4AQEAYFAQDAA",
+                    "factions": [
+                        "faction_Noxus_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 1
+                },
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CICQCAYGCEAQKBQFAIBAMGRLAMAQIAIQGQCAGBAFBUJBSAQBAECCOAIFAQGAGAIBAQWQCBAEA4AQKBQL",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 0
+                }
+            ],
+            "total_turn_count": 27
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "f591979d-0bf8-4122-bf17-370a8c4c2ef7",
+            "participants": [
+                "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-08T01:27:21.1783130+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CECACAYFAMBAEAYDAQBQCBJHGU4AMAIDAIGA6JJIG4AQEAYFAQDAA",
+                    "factions": [
+                        "faction_Noxus_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CIDACAYABYAQIAACAECQMAIDAEAAMCI5AMBAMFR2HYBQEAACAYFACAICAADQEAIBAASQCAQGAU",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Demacia_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 28
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "b2d2f52e-3459-479a-b146-3b3c1826b8d6",
+            "participants": [
+                "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-08T01:16:54.0193939+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CECACBAECABACAYCCQBQKAYBAYGQIAIEEYTS2NAEAEAQIAIBAMBQ6AIDAQJACBIDBEBACAIDFYAQEAYD",
+                    "factions": [
+                        "faction_Noxus_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                },
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CIDACAYABYAQIAACAECQMAIDAEAAMCI5AMBAMFR2HYBQEAACAYFACAICAADQEAIBAASQCAQGAU",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Demacia_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                }
+            ],
+            "total_turn_count": 29
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "4da1a70d-3ca2-4578-9016-071634b27e98",
+            "participants": [
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                "ijYy6ZaFIoPukKz6OMKsZ4j4QJTY0SM7FfqBRiFRUbAWRe6611BR8NAmEY-vUaX6z_Z97lafEtx8FQ"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-08T00:35:20.9616892+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CICQCAYGCEAQKBQFAIBAMGRLAMAQIAIQGQCAGBAFBUJBSAQBAECCOAIFAQGAGAIBAQWQCBAEA4AQKBQL",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                },
+                {
+                    "puuid": "ijYy6ZaFIoPukKz6OMKsZ4j4QJTY0SM7FfqBRiFRUbAWRe6611BR8NAmEY-vUaX6z_Z97lafEtx8FQ",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_0",
+                    "deck_code": "CQDACAYCAUAQGBIQAECAEDYBAUFDUAQFAICAOBABAIFQYMJSAMAQEAQFAECQEGQCAMBASFACAEAQELABAUBBK",
+                    "factions": [
+                        "faction_Ionia_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                }
+            ],
+            "total_turn_count": 31
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "e62a97d1-5547-43bd-a3a5-1ec2692bb508",
+            "participants": [
+                "ijYy6ZaFIoPukKz6OMKsZ4j4QJTY0SM7FfqBRiFRUbAWRe6611BR8NAmEY-vUaX6z_Z97lafEtx8FQ",
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-08T00:22:58.8738544+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "ijYy6ZaFIoPukKz6OMKsZ4j4QJTY0SM7FfqBRiFRUbAWRe6611BR8NAmEY-vUaX6z_Z97lafEtx8FQ",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CQCQCAYCAIAQGBASAECAIEAEAECAYJZNGQCQKCTPPCTADLYBYAAQCAICAYXAEAIBAQAQCBIKRAAQ",
+                    "factions": [
+                        "faction_BandleCity_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CIDACAYABYAQIAACAECQMAIDAEAAMCI5AMBAMFR2HYBQEAACAYFACAICAADQEAIBAASQCAQGAU",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Demacia_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 39
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "3766c764-b345-4d71-95b6-7f8086cb0752",
+            "participants": [
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                "o368nf7SQS17ObF5gIu6R2Ur64bRLIn7PPgNEbDjc5jdMhagJMP-geHa53muJ4NUcY2VxIj40t55nA"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-07T23:40:18.5298850+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CICQCAYGCEAQKBQFAIBAMGRLAMAQIAIQGQCAGBAFBUJBSAQBAECCOAIFAQGAGAIBAQWQCBAEA4AQKBQL",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "o368nf7SQS17ObF5gIu6R2Ur64bRLIn7PPgNEbDjc5jdMhagJMP-geHa53muJ4NUcY2VxIj40t55nA",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CICQCAYGCEAQKBQFAIBAMGRLAMAQIAIQGQCAGBAFBUJBSAYBAECCOAIFAYFQCBIEBQAQCBAEA4",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 31
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "dc974272-a605-4652-b000-d42410717856",
+            "participants": [
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                "o368nf7SQS17ObF5gIu6R2Ur64bRLIn7PPgNEbDjc5jdMhagJMP-geHa53muJ4NUcY2VxIj40t55nA"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-07T23:35:14.3480600+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CIDACAYABYAQIAACAECQMAIDAEAAMCI5AMBAMFR2HYBQEAACAYFACAICAADQEAIBAASQCAQGAU",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Demacia_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                },
+                {
+                    "puuid": "o368nf7SQS17ObF5gIu6R2Ur64bRLIn7PPgNEbDjc5jdMhagJMP-geHa53muJ4NUcY2VxIj40t55nA",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CICQCAYGCEAQKBQFAIBAMGRLAMAQIAIQGQCAGBAFBUJBSAYBAECCOAIFAYFQCBIEBQAQCBAEA4",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                }
+            ],
+            "total_turn_count": 18
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "728df0b2-7ab7-4689-84f3-6a853cf50fe7",
+            "participants": [
+                "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-07T23:24:55.9829841+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CECACAYFAMBAEAYDAQBQCBJHGU4AMAIDAIGA6JJIG4AQEAYFAQDAA",
+                    "factions": [
+                        "faction_Noxus_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 1
+                },
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CICQCAYGCEAQKBQFAIBAMGRLAMAQIAIQGQCAGBAFBUJBSAQBAECCOAIFAQGAGAIBAQWQCBAEA4AQKBQL",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 0
+                }
+            ],
+            "total_turn_count": 21
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "8d0e1452-41e3-4031-bcc9-ceb0312a3bab",
+            "participants": [
+                "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-07T23:17:01.7113212+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_2",
+                    "deck_code": "CECACAYFAMBAEAYDAQBQCBJHGU4AMAIDAIGA6JJIG4AQEAYFAQDAA",
+                    "factions": [
+                        "faction_Noxus_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 1
+                },
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CIDACAYABYAQIAACAECQMAIDAEAAMCI5AMBAMFR2HYBQEAACAYFACAICAADQEAIBAASQCAQGAU",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Demacia_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 0
+                }
+            ],
+            "total_turn_count": 25
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "a2faba63-2263-48c3-aaae-f4c87f32dd62",
+            "participants": [
+                "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg"
+            ]
+        },
+        "info": {
+            "game_mode": "Bo3ChallengeLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-07T23:04:34.3233627+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "HoZtwXg7qN-c-Gn5jU7tlEgkX3O6qqSciYtYcf1RXYtpqMMMYKINorN5qJeqhbE6XhUVpneOa0WXzg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CECACBAECABACAYCCQBQKAYBAYGQIAIEEYTS2NAEAEAQIAIBAMBQ6AIDAQJACBIDBEBACAIDFYAQEAYD",
+                    "factions": [
+                        "faction_Noxus_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "0ec2acd7-38a0-4d80-b3cb-4b23681c89e9_live_index_1",
+                    "deck_code": "CIDACAYABYAQIAACAECQMAIDAEAAMCI5AMBAMFR2HYBQEAACAYFACAICAADQEAIBAASQCAQGAU",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Demacia_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 31
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "9a12e849-7943-4751-a895-80430029e53e",
+            "participants": [
+                "4xZwHkxuTzAjZRicTZsRGoEyYIlB1b0wJrfc7eBJHJU05O9n3zc_hjxbzZmRKKbysio5YxMwKrB1hA",
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg"
+            ]
+        },
+        "info": {
+            "game_mode": "SeasonalTournamentLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-06T02:14:57.7950596+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "4xZwHkxuTzAjZRicTZsRGoEyYIlB1b0wJrfc7eBJHJU05O9n3zc_hjxbzZmRKKbysio5YxMwKrB1hA",
+                    "deck_id": "d67464e8-7b58-491e-83d3-0a764ed3a174_live_tour_deck_0",
+                    "deck_code": "CQDACAYEAUAQIBAQAECQUWACAUBQMDIDAEBQEEYUAMAQIJZNGQBACAIDBMAQKAYJAMAQCBABAEBQGDYBAQCAG",
+                    "factions": [
+                        "faction_Noxus_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "d67464e8-7b58-491e-83d3-0a764ed3a174_live_tour_deck_1",
+                    "deck_code": "CICQCAYGCEAQKBQFAIBAMGRLAMAQIAIQGQCAGBAFBUJBSAQBAECCOAIFAQGAGAIBAQWQCBAEA4AQKBQL",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 27
+        }
+    },
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "21ebab97-cd12-43ec-b2a4-a913f13c3085",
+            "participants": [
+                "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                "4xZwHkxuTzAjZRicTZsRGoEyYIlB1b0wJrfc7eBJHJU05O9n3zc_hjxbzZmRKKbysio5YxMwKrB1hA"
+            ]
+        },
+        "info": {
+            "game_mode": "SeasonalTournamentLobby",
+            "game_type": "",
+            "game_start_time_utc": "2022-02-06T02:09:59.8857953+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "PfzClN0fv3aqfVPwfqiIV-lZNPIjmIpPyInqBiTvfsbvb0LMXhlrQCamZiGg7ib9twYINcsbMz6Hxg",
+                    "deck_id": "d67464e8-7b58-491e-83d3-0a764ed3a174_live_tour_deck_2",
+                    "deck_code": "CQDACAYCAUAQGBIQAECAEDYBAUFDUAQFAICAOBABAIFQYMJSAQAQCARMAEBAEBIBAMBBIAQFAIKRUAA",
+                    "factions": [
+                        "faction_Ionia_Name",
+                        "faction_ShadowIsles_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "4xZwHkxuTzAjZRicTZsRGoEyYIlB1b0wJrfc7eBJHJU05O9n3zc_hjxbzZmRKKbysio5YxMwKrB1hA",
+                    "deck_id": "d67464e8-7b58-491e-83d3-0a764ed3a174_live_tour_deck_0",
+                    "deck_code": "CQDACAYEAUAQIBAQAECQUWACAUBQMDIDAEBQEEYUAMAQIJZNGQBACAIDBMAQKAYJAMAQCBABAEBQGDYBAQCAG",
+                    "factions": [
+                        "faction_Noxus_Name",
+                        "faction_Piltover_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 24
+        }
+    }
+]

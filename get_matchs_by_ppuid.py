@@ -1,7 +1,12 @@
 import json
 import requests
 from api_token import api_token_var
+from ratelimit import limits
 
+
+TWO_MINUTES = 120
+
+@limits(calls=100, period= TWO_MINUTES)
 def get_matchs_by_ppuid(ppuid, region):
     """Función que obtine una lista con los úñtimos 20 math de un jugador, dado su PPUID
 

@@ -1,0 +1,43 @@
+[
+    {
+        "metadata": {
+            "data_version": "2",
+            "match_id": "ee6a8290-130a-4ca0-a50e-894d8064d89a",
+            "participants": [
+                "WP7N5Jphb-GQjA3DcYOIsD1L1rJK1NhiUd2RT9rSxzLTMZ-rKeoTF3kdK4fM30EdDg3AQQfC5UnyGg",
+                "TMnbGMCj3E1X4fKZGc1IJpWpsBYGxaeJ8huHjbpKG6F76vmGUbERZBe4AiF32T8fPIeiDSY9CRq-kw"
+            ]
+        },
+        "info": {
+            "game_mode": "Constructed",
+            "game_type": "Ranked",
+            "game_start_time_utc": "2022-02-10T20:30:21.4976878+00:00",
+            "game_version": "live_3_01_12",
+            "players": [
+                {
+                    "puuid": "WP7N5Jphb-GQjA3DcYOIsD1L1rJK1NhiUd2RT9rSxzLTMZ-rKeoTF3kdK4fM30EdDg3AQQfC5UnyGg",
+                    "deck_id": "f2ef1d6c-d445-4062-a345-cce3a65c13dd",
+                    "deck_code": "CMCACAIABEAQGAAOAECAAAQFAQDRINTHQAAYEAIDAEBAAAICAEAAMHIEAQDQ2XMBAGFACAQBAEABUAIEAABQ",
+                    "factions": [
+                        "faction_Demacia_Name",
+                        "faction_Shurima_Name"
+                    ],
+                    "game_outcome": "win",
+                    "order_of_play": 0
+                },
+                {
+                    "puuid": "TMnbGMCj3E1X4fKZGc1IJpWpsBYGxaeJ8huHjbpKG6F76vmGUbERZBe4AiF32T8fPIeiDSY9CRq-kw",
+                    "deck_id": "aa74d981-937a-489d-ac76-c3e2122e8e43",
+                    "deck_code": "CMBAKBAGAEBQKBYPA4CAOAITCZAUISSQAEAQIBZWAEBAIBQCAQ",
+                    "factions": [
+                        "faction_Bilgewater_Name",
+                        "faction_Shurima_Name"
+                    ],
+                    "game_outcome": "loss",
+                    "order_of_play": 1
+                }
+            ],
+            "total_turn_count": 34
+        }
+    }
+]
