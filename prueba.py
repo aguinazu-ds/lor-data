@@ -1,15 +1,10 @@
 import json
 import requests
 import time
+from read_write_delete_duplicates import readData, writeData, delete_duplicates_list
 from ratelimit import limits, RateLimitException, sleep_and_retry
 from api_token import api_token_var
 
-
-def readData(filename):
-    data = None
-    with open(filename, 'r') as fp:
-        data = json.load(fp)
-    return data
 print('Cargando Base de datos...')
 master_player_list = readData('data/lor-player-data/master_player_list_ppuids.json')
 
@@ -32,15 +27,6 @@ print('Iniciando recolección de datos...')
 for player in master_player_list:
     print('Recolectando match list relacionada al siguiente id: {}'.format(player))
     match_list = match_list + get_player_match_list('americas', player, api_token_var)
-
-def writeData(filename, data):
-    with open(filename, 'w') as file:
-         file.write(format(json.dumps(data, ensure_ascii=False, indent=4)))
-
-def delete_duplicates_list(seq):
-    seen = set()
-    seen_add = seen.add
-    return [x for x in seq if not (x in seen or seen_add(x))]
 
 print('Recolección de datos terminada...')
 print('Guardando datos en data/lor-match-data/match-lists/...')
