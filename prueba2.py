@@ -1,10 +1,12 @@
 import json
 import requests
 import time
+from read_write_delete_duplicates import readData, writeData, delete_duplicates_list
 from ratelimit import limits, RateLimitException, sleep_and_retry
-from api_token import api_token_var
+from api_token import api_token_var_list
 
-match_list = ['6ce11b6c-fb64-433d-97f1-511a606f94b4', '65a0c70e-2375-4d50-9319-7b6876ab8826', '7eecc818-c459-4299-a620-e43e62766da0', '7d2f8fca-7f1c-4a52-99f7-f6312dbe9ef4', '814504c5-373c-4bf8-98c0-18409ef09d29', 'ad9c59ed-818e-4e13-bd9e-9247f637968e', '53d84c56-9f85-46a4-8d2c-3a757d5e59d1', '746b5b7d-f589-4c8b-b67e-31085282b24f', 'cdf5acb6-d44a-45e8-9b0f-468590e75047', '1f8e3aab-308a-4fb3-9286-036393ed50aa', '09cb0df1-805e-46c0-ae6b-91d775a90c7c', 'e6ad34a4-646d-42c3-95a3-07c05e89112e', '05bc3a8d-a67d-420e-b619-1cc99f520fe6', 'bfc91d4d-437b-4595-a9da-0d590ee6f8a8', '73286443-8712-4548-8792-57ce38ce48cd', '156c5f26-ef7f-46a1-a5ae-dd6ffa5b39a0', 'c8e2bf28-c64b-4b3f-974d-496e0d16ac79', '17309c18-105d-46a6-a645-d3a78fe70c84', '8955b6f8-9da2-420a-a9ae-322c9099f96b', '82825f24-59ce-43ea-b12b-1b27e95a4730', '98507cbb-252d-4cbc-a6b0-48542bbb5ea6', '0f77f1a4-93ec-4612-a246-7057a63ee1a1', '5d757773-18e4-4e6a-8014-147087a8062e', 'e788bd90-316f-45b6-ac27-e0a699a7a9b2', 'ee99bade-85d1-4b52-8f6b-70c8ab0754eb', '9491d32f-6507-4937-a3af-81499e72ca51', 'ec0cf351-5d8d-46e9-a34e-1674fd7f386c', 'dd14dbb1-01f6-4d9d-a98b-af5736eeb068', 'ac432ad5-d340-4158-bbe6-a6d432e7916b', 'cb854c2f-1501-4877-932e-c64a5559dd78', '95ec0fb6-4ef2-4e1b-8a77-ade7ee0cda6c', 'db364744-caaf-4898-a7a2-995a623ac5a1', 'e4d2bb57-7004-4469-bc6a-4b5fbb92e82a', '797234dc-c968-488f-bb3d-c9eaf7b5581b', '41cc1a29-db98-4ef9-8d4e-500a8a2ac3ea', '702202eb-6e38-4922-877d-dd64a14476df', '74a3e6ea-f86e-42a7-931d-c3f167513314', '549ac2db-2447-43cf-a2d9-a3e8c183a17e', 'd49f53e9-e5e0-4629-a817-ead5d8bfae9f', 'e424cf89-238e-422e-9029-7f4fb88beb13', '1f19cdfa-f77a-43ec-afda-a0d4eac6be6f', '09771f86-d2e4-4df0-b922-d4c6656c96f8', '3743781d-af93-45ab-8130-daab4ea0ac02', '1af195b3-c5aa-4cf6-80c4-7730740497f9', 'd68717da-cfe9-44f7-a662-75574f44423a', 'dfc3973a-0c70-4df8-a5d2-ca40ed733e14', 'a13359e0-b53f-4cdc-a733-156c10a76d77', '700f8077-d997-4a11-831d-e9d396f6ac4e', '9aac6718-a6eb-4f05-8f5c-4caaadae23e5', '69074bdc-3a2c-41d2-840c-6a8a7eb65a26', '73fae4f8-c434-4d4e-9cf8-9c4a3929351a', 'bb3eddbb-0beb-4e4a-8e6d-40a30a433c18', 'd835825e-047d-4595-bc3d-cb266ae62029', '96a081a6-18a0-4321-a051-23e1f501aa2a', '2117f80b-cfa5-4879-bb38-01e378e7fa02', 'f977fbd8-0856-4b2a-b42e-f16c2c004967', '5cae7f07-7d14-4054-a0eb-4852936cf84c', '41fcde85-a110-48e3-981e-e16f14ecee2d', '88c909d1-aa19-4471-bc9a-771c5ed877f4', '6380aa22-0953-4c0c-a7fb-2527650c8412', 'b164847d-69be-42bd-8499-18dd6621e341', 'b82ca853-905a-4913-85b4-5fac3a7ac44e', '8eb7be8b-9f3e-4558-99d2-9e4f7a037a74', '86877971-cf2d-4735-836b-e9d08f5b9ddb', '1c320050-7b60-474d-9ab6-4a7ecde745a4', 'ce857ef7-b513-471c-a26b-fcfe1fcf7100', 'a7161281-98ba-4e0d-aada-2ea5151000ec', 'c8f337b1-a749-40c2-99c8-d04ee72596fa', 'd6c2467d-f055-4e7d-9b3d-aff1fc85692b', '8a6cab05-1c9c-482f-9d5c-16d6d333ca11', '8a618e84-346c-49c2-9ebe-0669849de944', '535a7b4f-0759-455e-8f39-6a5def4618ed', '0ba6dc9b-168e-4d96-9364-c688673f723a', '348fdf54-3e13-4dc8-8094-5890bf0cf15e', '4e4d2c57-3cea-42f3-8802-b4e20e002599', '0ec4c01c-8959-42b2-b55f-f62af9e93bf4', '5837529e-626d-45b5-8a4a-38b000235c8d', '1dc96f2d-228b-487e-ba5b-90fe669ee805', '66200f67-decd-457a-8984-a816191abd16', '6e0dca60-b250-4d44-a2e5-009567ba6bc7', '024066b5-b3e8-48db-a78a-9ca6f4e3414e', '2307b165-4a2b-4825-a1f1-49e3b139ce86', 'f64be8cf-2c4f-4c93-9acb-557db15e02fe', 'beb5bb20-a676-4e23-8016-b645f63e18ba', '2ec896e1-98fc-45b9-89bc-6c1bb1a1d029', '8610d848-c6f1-48e2-9e39-914dda0f2838', 'ac99a30b-94da-4b9e-8639-818b6974f157', 'e0a8039e-a0ca-4e17-84a0-730e823eb543', 'a5f78aa5-b0be-4709-87d8-ab1800b44c7c', '50610f17-66a1-40aa-97ef-47ccca31490f', '93fa5b78-b0d2-4640-bc02-c0291d564771', 'ac78c372-5998-45a5-aa3e-f2a4c165ae1b', '9f2559d7-4042-4102-81f9-868815a4a32c', '4d0afcaf-4478-48ba-898f-9ac9530466a1', 'eaa29aaf-6d71-4c69-90f8-e082f1fa32a0', '1c0b9a61-ad8a-4336-9de2-32dfa3a7d779', '2caaa98d-c19b-4a5c-9a91-e60e0985bb01', 'af843a71-128b-4c35-bc68-ae461e423c62', 'e268a0c0-e3cc-4ec4-aad9-608d779af11f', '7aca898a-75d8-4e33-81a4-f6646077ed73', '172b7f1f-e4f0-4389-8ecb-dac22ff641c9', 'e8e80b65-f117-4722-9950-a27b6956ebcc', '1d44ae82-2cc2-4bd1-b235-4046efbb719e', 'cf6808be-1466-42cc-b835-efae3ae42c88', 'eeac2d7e-0ecf-43cd-81ef-3d73042982a1', 'a11a28fe-1245-47f6-ad6f-67dbb645ed2e', 'd6243fb7-d2e3-4d8d-a5a4-27f0dc1e4176', 'c8e2bf28-c64b-4b3f-974d-496e0d16ac79', '237087d0-8f02-4eba-a4d4-7076445276b8', '338cda3e-8889-4342-8f2e-e2629ecd51dd', '98692d16-9a87-41be-af75-7a75cc6f878b', '328d3b5f-4253-452e-8581-867da7aad013', 'c793ffa4-0292-47b5-8be8-7f96cf2c0e63', 'd74a3ebb-0e82-4de5-bf91-d22a3db0fc55', '2690ce59-5b7f-43f1-bb8b-46d18dce4435', '94e50043-27c8-4824-af20-d0aeafb13627', 'b2d4bfa0-6d3b-4f50-aa95-638a6822a612', 'b80d71e8-6dda-46f1-874c-f4b687ec6dff', 'fe888ad7-4714-4ab0-93ed-2e9d5b679777', '639d75f0-f746-4ca9-a90a-a422a78b258c', '3c8955b4-eaf5-4854-887d-f1c59ce59795', 'd5b0f2c9-543b-4c58-99c8-60a99f2c21cc', '10fd89a7-c448-4fb1-96e0-dd5e284b3729', '916f287a-da52-474a-815d-d343bd652909', '5fe0c333-8ded-4198-9817-d2a374ad1480', '704fec7d-73b3-4fa1-b702-3e3dbd8c2617', '73b6ef67-b0c1-43a8-8db9-c2495f34ba86', '79fb7e09-1638-4123-8bed-e2d7342c3aac', '965a3753-27db-469f-afea-1e8fae28f15c', 'cf977b13-3956-45d1-982c-d9acffb771d1', '98029207-f0ce-44f7-8ec1-0e8d7d495266', '8b2ef1ee-fef9-4812-944e-8c4184f63db9', 'f089f86f-290b-49c6-9bcd-5418fe5844d5', 'c7e6fa1d-7ac4-4d72-8777-e41b08bfc97f', 'a7fd8277-f204-4382-8dbe-ff3b885e11b9', '05a73a4d-1a20-49c5-b982-b4e5c836d47b', '1a5e6bb8-2bb4-4971-864b-000f6695bd94', '4e6d0c39-c7a8-453c-a423-adcb28850526', 'b09187d4-819d-45de-879a-322d9df1fe96', 'ee6a8290-130a-4ca0-a50e-894d8064d89a', '875f2852-5904-4b29-a57a-59dde4a93008', 'de84b425-72d1-40a2-866d-c0cd30266cb7', 'f17eb4fc-c929-47e7-b799-01aecd74dd84', 'd3b043e1-d448-40c3-a3d1-bfd330937aea', '444f7dc1-aa67-4e4a-8208-38a013d4a333', '2703127d-f71d-4430-9189-5daf3160e9ed', '06351a1a-b576-47c2-981c-ccf4e6a5946b', 'eaa01dc8-dfff-4264-8396-7fc7fa625eb2', '6aa50f9a-314c-4aa0-b405-4bc0655372e1', 'bbbd1997-f6aa-4d49-aa24-320e8c3b8507', 'aefb9f42-7c79-4d2b-a1c6-e36e3ca7c0cf', '17ea6a03-f6ba-419f-9d7a-e9f8e1c2577d', '1ae55334-e9e7-42fb-8bf6-c0ebc70d07de', 'dc89f363-22b0-4156-8e69-0905532cabdc', '754b6e8d-f990-42f6-949b-df0aacdf9a79', '8ccce2bf-4eb3-42c0-9e92-971f0dcd50b1', '37bbe031-a9d0-45a1-b91f-11f2f50b527f', '442a4213-af5e-4b5f-a336-84ad5d96bb3f', 'ad3cec53-0efe-4c72-a6df-4effbec58ada', '401b4410-13a1-48c7-8021-127eae4d12b4']
+print('Cargando match list desde data/lor-match-data/match-lists/...')
+match_list = readData('data/lor-match-data/match-lists/match_list-20220211-233732.json')
 
 TWO_MINUTES = 120
 MAX_CALLS_PER_MINUTE= 100
@@ -14,25 +16,35 @@ MAX_CALLS_PER_MINUTE= 100
 def get_match_info_by_id(region, match_id, api_key):
     api_url = 'https://{}.api.riotgames.com/lor/match/v1/matches/{}?api_key={}'.format(region, match_id, api_key)
     response = requests.get(api_url)
-    return json.loads(response.content.decode('utf-8'))
-
-def writeData(filename, data):
-    with open(filename, 'w') as file:
-         file.write(format(json.dumps(data, ensure_ascii=False, indent=4)))
+    if response.status_code == 200:
+        return json.loads(response.content.decode('utf-8'))
+    else:
+        return response.status_code
 
 temp_list = []
 counter=0
+api_key_index = 0
 set_time = time.strftime("%Y%m%d-%H%M%S")
-for match in match_list[139:]:
+
+print('Comenzando recolección de datos...')
+for match in match_list:
     counter= counter +1
-    print(counter)
     try:
-        match_info = get_match_info_by_id('americas', match, api_token_var)
-        print(match_info)
-        if counter == 100:
-            break
+        match_info = get_match_info_by_id('americas', match, api_token_var_list[api_key_index])
+        if match_info == 429:
+            api_key_index += 1
+            print('Error en paso {}'.format(counter))
+            print('Error 429, cambiando API Key a {}'.format(api_token_var_list[api_key_index]))
+            if api_key_index > len(api_token_var_list)-1:
+                print('No me quedan más API Keys')
+                break
+        elif match_info == 404:
+            print('Error en paso {}'.format(counter))
+            print('Error 404, no se encontro información relacionada al id {}'.format(match))
+            pass
         elif match_info["info"]["game_type"] == "Ranked" or match_info["info"]["game_mode"] == "SeasonalTournamentLobby":
+            print('Guardando datos relacionados al id: {}'.format(match))
             temp_list.append(match_info)
             writeData('data/lor-match-data/match_data-{}.json'.format(set_time), temp_list)
     except:
-        print('algun error')
+        print('Error en paso {}, no tengo idea que error!!!'.format(counter))
