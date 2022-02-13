@@ -39,9 +39,7 @@ async def main():
 # Función que queremos correr de manera asincronica, sin esperar a que cada API call termine.
 async def get_match_info(session, keys, index):
 
-    #hundred_match_list = match_list[4193+100*index:]
-
-    #
+    #Restricción para que la función solo se llame 1 vez cada 1.5 segundos y así no pasar el limite de 100 llamadas cada 120 segundos que impone riot.
     @sleep_and_retry
     @limits(calls=1, period=1.5)
     async def get_match_info_by_id(match_id, api_key):
@@ -71,7 +69,7 @@ async def get_match_info(session, keys, index):
         # · El error 429, es cuando pasamos alguno de los limites que impone Riot al hacer API Calls.
         # Para las API Keys que tengo yo (21 keys), cada una tiene un límite de 1 llamada cada 20seg o 100 llamadas cada 120 seg.
         # Además, cada tipo de llamada tiene su límite, en el caso de esta función, cuando llamamos a la URL de riot para obtener
-        # información (linea 48 y 49), este método en particular tiene un límite de 100 llamadas cada una hora.
+        # información (linea 46 y 47), este método en particular tiene un límite de 100 llamadas cada una hora.
         # · El error 400 es cuando no se encuentra información (en los servidores de Riot) asociada a el match id solicitado.
         if match_info == 429:
             print("\n")
