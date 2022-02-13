@@ -1,8 +1,11 @@
 import json
 import requests
-from api_token import api_token_var
+from ratelimit import limits, RateLimitException, sleep_and_retry
+from api_token import api_token_var_list
 
-def get_player_puuid(region, gameName, tagLine):
+@sleep_and_retry
+@limits(calls=1, period=2)
+def get_player_puuid(region, gameName, tagLine, api_key):
     """Función que entrega como resultado el PUUID de una cuenta de Riot, dado la region, el gameName y el tag del usuario (Ej. americas, Bast, 8341)
 
     Args:
@@ -15,11 +18,11 @@ def get_player_puuid(region, gameName, tagLine):
     """
     
     api_url_base = 'https://{}.api.riotgames.com/riot/account/v1/accounts/by-riot-id/'
-    api_url = '{}{}/{}?api_key={}'.format(api_url_base.format(region), gameName, tagLine, api_token_var)
+    api_url = '{}{}/{}?api_key={}'.format(api_url_base.format(region), gameName, tagLine, api_key)
 
     respuesta = requests.get(api_url)
 
     if respuesta.status_code == 200:
         return json.loads(respuesta.content.decode('utf-8'))['puuid']
     else:
-        return None
+        return respuesta.status_code
