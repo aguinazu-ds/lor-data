@@ -88,7 +88,7 @@ async def get_match_info(session, keys, index):
             # la idea de la linea de arriba es filtrar la info que obtengo, ya que solo me interesan la info relacionada a matchs 
             # que sean competitivos (Ranked o SeasonalTournamentLobby (Torneos)). Sin filtrar igual estoy guardando info relacionada a 
             # match en partidas normales o cuando se juega en contra de bots.
-            print('Guardando datos relacionados al id: {}'.format(match_list_test[id_index]))
+            print('Guardando datos relacionados al id: {}'.format(match_list_test[21*id_index + index]))
             temp_list[0][api_token_var_list[index]].append(match_info)
     
     return temp_list
