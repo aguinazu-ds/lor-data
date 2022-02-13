@@ -47,7 +47,7 @@ async def get_match_info(session, keys, index):
         async with session.get(api_url) as response:
             # result = response
             if response.status == 200:
-                return await response.json(encoding='utf-8')
+                return await response.json(encoding='utf-8'), response
             else:
                 return response.status, response
     
@@ -71,14 +71,14 @@ async def get_match_info(session, keys, index):
         # Además, cada tipo de llamada tiene su límite, en el caso de esta función, cuando llamamos a la URL de riot para obtener
         # información (linea 46 y 47), este método en particular tiene un límite de 100 llamadas cada una hora.
         # · El error 400 es cuando no se encuentra información (en los servidores de Riot) asociada a el match id solicitado.
-        if match_info == 429:
+        if match_info[0] == 429:
             print("\n")
             print('Error en paso nº{}'.format(counter))
             print('Error 429, rate limit alcanzado.')
             print('"X-App-Rate-Limit-Count": {}'.format(match_info[1].headers["X-App-Rate-Limit-Count"]))
             print('"X-Method-Rate-Limit-Count": {}'.format(match_info[1].headers["X-Method-Rate-Limit-Count"]))
             return temp_list
-        elif match_info == 400:
+        elif match_info[0] == 404:
             print("\n")
             print('Error en paso nº{}'.format(counter))
             print('Error 404, no se encontro información relacionada al id {}'.format(match_list_test[21*id_index + index]))
@@ -88,8 +88,9 @@ async def get_match_info(session, keys, index):
             # la idea de la linea de arriba es filtrar la info que obtengo, ya que solo me interesan la info relacionada a matchs 
             # que sean competitivos (Ranked o SeasonalTournamentLobby (Torneos)). Sin filtrar igual estoy guardando info relacionada a 
             # match en partidas normales o cuando se juega en contra de bots.
-            print('Guardando datos relacionados al id: {}'.format(match_list_test[21*id_index + index]))
-            temp_list[0][api_token_var_list[index]].append(match_info)
+            if (match_info[0]['info']['game_type'] == 'Ranked') or (match_info[0]["info"]["game_mode"] == "SeasonalTournamentLobby"):
+                print('Guardando datos relacionados al id: {}'.format(match_list_test[21*id_index + index]))
+                temp_list[0][api_token_var_list[index]].append(match_info[0])
     
     return temp_list
 
