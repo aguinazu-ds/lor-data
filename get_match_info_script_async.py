@@ -51,13 +51,12 @@ async def get_match_info(session, keys, index):
     for match in hundred_match_list:
         counter= counter +1
         match_info = await get_match_info_by_id(match, api_token_var_list[index])
-        # print(match_info["info"]["game_type"])
-        # print(match_info["info"]["game_mode"])
         # if (match_info["info"]["game_type"] == "Ranked") or (match_info["info"]["game_mode"] == "SeasonalTournamentLobby"):
-    
+        #     print('Guardando datos relacionados al id: {}'.format(match))
+        #     temp_list[index][api_token_var_list[index]].append(match_info)
         if match_info == 429:
             return temp_list
-        if match_info == 400:
+        elif match_info == 400:
             pass
         else:
             print('Guardando datos relacionados al id: {}'.format(match))
