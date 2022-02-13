@@ -81,7 +81,7 @@ async def get_match_info(session, keys, index):
         elif match_info == 400:
             print("\n")
             print('Error en paso nº{}'.format(counter))
-            print('Error 404, no se encontro información relacionada al id {}'.format(match_list_test[id_index]))
+            print('Error 404, no se encontro información relacionada al id {}'.format(match_list_test[21*id_index + index]))
             pass
         else:
             # if (match_info["info"]["game_type"] == "Ranked") or (match_info["info"]["game_mode"] == "SeasonalTournamentLobby"):
