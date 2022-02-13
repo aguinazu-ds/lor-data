@@ -51,7 +51,7 @@ async def get_match_info(session, keys, index):
             if response.status == 200:
                 return await response.json(encoding='utf-8')
             else:
-                return response.status
+                return response.status, response
     
     # Contador paa saber en que id de la match list obtivimos algún error
     counter=0
@@ -68,24 +68,28 @@ async def get_match_info(session, keys, index):
 
         match_info = await get_match_info_by_id(match_list[21*id_index + index], api_token_var_list[index])
 
-        # if (match_info["info"]["game_type"] == "Ranked") or (match_info["info"]["game_mode"] == "SeasonalTournamentLobby"):
-        #     print('Guardando datos relacionados al id: {}'.format(match))
-        #     temp_list[index][api_token_var_list[index]].append(match_info)
-
         # · El error 429, es cuando pasamos alguno de los limites que impone Riot al hacer API Calls.
         # Para las API Keys que tengo yo (21 keys), cada una tiene un límite de 1 llamada cada 20seg o 100 llamadas cada 120 seg.
         # Además, cada tipo de llamada tiene su límite, en el caso de esta función, cuando llamamos a la URL de riot para obtener
         # información (linea 48 y 49), este método en particular tiene un límite de 100 llamadas cada una hora.
         # · El error 400 es cuando no se encuentra información (en los servidores de Riot) asociada a el match id solicitado.
-        if match_info == 429: 
-            print(counter)
-            print(match_info)
+        if match_info == 429:
+            print("\n")
+            print('Error en paso nº{}'.format(counter))
+            print('Error 429, rate limit alcanzado.')
+            print('"X-App-Rate-Limit-Count": {}'.format(match_info[1].headers["X-App-Rate-Limit-Count"]))
+            print('"X-Method-Rate-Limit-Count": {}'.format(match_info[1].headers["X-Method-Rate-Limit-Count"]))
             return temp_list
         elif match_info == 400:
-            print(counter)
-            print(match_info)
+            print("\n")
+            print('Error en paso nº{}'.format(counter))
+            print('Error 404, no se encontro información relacionada al id {}'.format(match_list_test[id_index]))
             pass
         else:
+            # if (match_info["info"]["game_type"] == "Ranked") or (match_info["info"]["game_mode"] == "SeasonalTournamentLobby"):
+            # la idea de la linea de arriba es filtrar la info que obtengo, ya que solo me interesan la info relacionada a matchs 
+            # que sean competitivos (Ranked o SeasonalTournamentLobby (Torneos)). Sin filtrar igual estoy guardando info relacionada a 
+            # match en partidas normales o cuando se juega en contra de bots.
             print('Guardando datos relacionados al id: {}'.format(match_list_test[id_index]))
             temp_list[0][api_token_var_list[index]].append(match_info)
     
