@@ -1,11 +1,8 @@
 import json
 import requests
 from ratelimit import limits, RateLimitException, sleep_and_retry
-from api_token import api_token_var
-
-TWO_MINUTES = 120
-MAX_CALLS_PER_MINUTE= 100
-
+from api_token import api_token_var_list
+#arreglar función
 @sleep_and_retry
 @limits(calls=MAX_CALLS_PER_MINUTE, period=TWO_MINUTES)
 def get_match_info_by_id(region, match_id):

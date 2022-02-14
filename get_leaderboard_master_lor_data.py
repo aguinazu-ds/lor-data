@@ -1,13 +1,13 @@
 import json
 import requests
-from api_token import api_token_var
+from api_token import api_token_var_list
 
-check = requests.get('https://americas.api.riotgames.com/lor/ranked/v1/leaderboards?api_key={}'.format(api_token_var))
+check = requests.get('https://americas.api.riotgames.com/lor/ranked/v1/leaderboards?api_key={}'.format(api_token_var_list[0]))
 
 def get_ranked_info(region):
     ''' '''
     api_url_base = 'https://{}.api.riotgames.com/lor/ranked/v1/leaderboards'
-    api_url = '{}?api_key={}'.format(api_url_base.format(region),api_token_var)
+    api_url = '{}?api_key={}'.format(api_url_base.format(region),api_token_var_list[0])
     
     respuesta = requests.get(api_url)
 
