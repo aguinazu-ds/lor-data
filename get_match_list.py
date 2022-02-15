@@ -17,7 +17,8 @@ print("\n")
 match_list = []
 
 @sleep_and_retry
-@limits(calls=1, period=2)
+@limits(calls=1, period=1.25)
+@limits(calls=100, period=3600)
 def get_player_match_list(region, ppuid, api_key):
     api_url = 'https://{}.api.riotgames.com/lor/match/v1/matches/by-puuid/{}/ids?api_key={}'.format(region, ppuid, api_key)
     respuesta = requests.get(api_url)

@@ -7,7 +7,7 @@ ONE_MINUTES = 60
 MAX_CALLS_PER_MINUTE= 1000
 
 @sleep_and_retry
-@limits(calls=1, period= 1.4)
+@limits(calls=1, period= 1.25)
 def get_name_and_tag_by_ppuid(region, ppuid, api_key):
     """"""
     api_url = 'https://{}.api.riotgames.com/riot/account/v1/accounts/by-puuid/{}?api_key={}'.format(region, ppuid, api_key)

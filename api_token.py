@@ -1,27 +1,27 @@
 #Reemplaza la variable api_token_var con tu actual TOKEN API de Riot
 
 api_token_var_list = [
-    'RGAPI-91ce2a87-2c64-4cc5-984b-941b887be5db', #Bast
-    'RGAPI-04d01857-8c2c-4406-903e-f8b8b3473f8e', #aegriotapi1
-    'RGAPI-0505be85-d26c-4135-ada0-b55619d2eab0', #aegriotapi2
-    'RGAPI-8688014d-70be-4cab-b6b0-793063df4027', #aegriotapi3
-    'RGAPI-bde8abd9-cbf5-49c1-81b6-fc4b5e1d22ec', #aegriotapi4
-    'RGAPI-598c5955-71ba-4f96-9a7f-0c12bf2ff2f7', #aegriotapi5
-    'RGAPI-5a7b3d44-6ec9-4ae3-b3a6-3101ab8a3623', #aegriotapi6
-    'RGAPI-7276d7eb-98ba-4906-bffb-5ee03789c027', #aegriotapi7
-    'RGAPI-6e218449-ee8c-44bf-b1b7-398eba5d1168', #aegriotapi8
-    'RGAPI-8f62518a-1173-4677-ac84-5be2e40719cc', #aegriotapi9
-    'RGAPI-943bc63a-19b3-41b2-ae40-d34bc0c9d7d8', #aegriotapi10
-    'RGAPI-edc17b55-8b84-4e82-b8ea-7f8b9c24a1f6', #aegriotapi11
-    'RGAPI-00d56328-20c0-47f2-b001-05481d15601e',
-    'RGAPI-084a1a31-dd94-485d-a641-5f61ee7481c9',
-    'RGAPI-9f33fa27-76e1-4ee2-8291-cb5ba3475da2',
-    'RGAPI-ad383249-14e7-448f-9068-71b16d498ee7',
-    'RGAPI-d972ddea-f18d-45ab-b64d-65254e788692',
-    'RGAPI-78f11f2e-d76e-4013-be37-b80567841f65',
-    'RGAPI-8ad6f29f-a3b3-47df-a307-e4e4cee57f40',
-    'RGAPI-2aa2679b-4e65-4b93-8e79-7fac999c613d',
-    'RGAPI-7d4d9b3e-8273-4392-9628-5e02cdbe7c44'
+    'RGAPI-1dd1ed05-db60-42e6-8b10-df8847dd7306', #Bast
+    'RGAPI-bdb8b614-33b3-4c54-8a58-857bd6f59a62', #aegriotapi1
+    'RGAPI-d658b2e7-18e3-4a70-89e2-e783332833cd', #aegriotapi2
+    'RGAPI-8a8b18e1-85c8-4250-9cb2-0e053ca99829', #aegriotapi3
+    'RGAPI-914824e2-9f3a-40ee-814a-e98eed7ad779', #aegriotapi4
+    'RGAPI-cdbedcb2-e5b8-453d-877e-c71c65c8404a', #aegriotapi5
+    'RGAPI-9feecacc-6bfd-433b-a149-241ef6d49536', #aegriotapi6
+    'RGAPI-fd584a52-35de-49c5-8aa9-8515a7384e3c', #aegriotapi7
+    'RGAPI-866a9e6d-ae98-48cb-b38a-20f45bd03d62', #aegriotapi8
+    'RGAPI-d1c280e8-6799-4f76-b0ab-5a2cb4e25602', #aegriotapi9
+    'RGAPI-c5cde0ea-7174-443f-a42b-e32b2c885c8f', #aegriotapi10
+    'RGAPI-7334f629-9c98-4399-8608-b12e931a9a18', #aegriotapi11
+    'RGAPI-3dfeb73a-b59c-46c8-8442-24009db756aa' #aegriotapi11
+    # 'RGAPI-084a1a31-dd94-485d-a641-5f61ee7481c9',
+    # 'RGAPI-9f33fa27-76e1-4ee2-8291-cb5ba3475da2',
+    # 'RGAPI-ad383249-14e7-448f-9068-71b16d498ee7',
+    # 'RGAPI-d972ddea-f18d-45ab-b64d-65254e788692',
+    # 'RGAPI-78f11f2e-d76e-4013-be37-b80567841f65',
+    # 'RGAPI-8ad6f29f-a3b3-47df-a307-e4e4cee57f40',
+    # 'RGAPI-2aa2679b-4e65-4b93-8e79-7fac999c613d',
+    # 'RGAPI-7d4d9b3e-8273-4392-9628-5e02cdbe7c44'
 ]
 
 

@@ -17,8 +17,8 @@ set_time = time.strftime("%Y%m%d-%H%M%S")
 print('Cargando match list desde data/lor-match-data/match-lists/...')
 print("\n")
 # Cargamos el archivo que contiene los match ids de los que queremos obtener información
-match_list_data_load = readData('data/lor-match-data/match-lists/master-match_list-20220212-232705.json')
-match_list = match_list_data_load[4099:]
+match_list = readData('data/lor-match-data/match-lists/master-match_list-20220212-232705.json')
+# match_list = match_list_data_load[4099:]
 
 
 async def main():
@@ -40,7 +40,7 @@ async def get_match_info(session, keys, index):
 
     #Restricción para que la función solo se llame 1 vez cada 1.5 segundos y así no pasar el limite de 100 llamadas cada 120 segundos que impone riot.
     @sleep_and_retry
-    @limits(calls=1, period=1.3)
+    @limits(calls=1, period=1.25)
     @limits(calls=100, period=3600)
     async def get_match_info_by_id(match_id, api_key):
         api_url = 'https://{}.api.riotgames.com/lor/match/v1/matches/{}?api_key={}'.format('americas', match_id, api_key)
