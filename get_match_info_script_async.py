@@ -41,6 +41,7 @@ async def get_match_info(session, keys, index):
     #Restricción para que la función solo se llame 1 vez cada 1.5 segundos y así no pasar el limite de 100 llamadas cada 120 segundos que impone riot.
     @sleep_and_retry
     @limits(calls=1, period=1.3)
+    @limits(calls=100, period=3600)
     async def get_match_info_by_id(match_id, api_key):
         api_url = 'https://{}.api.riotgames.com/lor/match/v1/matches/{}?api_key={}'.format('americas', match_id, api_key)
         async with session.get(api_url) as response:
@@ -83,12 +84,11 @@ async def get_match_info(session, keys, index):
             print('Error en paso nº{}'.format(counter))
             print('Error 404, no se encontro información relacionada al id {}'.format(match_list[21*id_index + index]))
             pass
+        elif match_info[0] == 403:
+            print("\n")
+            print('Error 403 en paso nº{}'.format(counter))
+            print('Revisar vigencia API Key {}'.format(api_token_var_list[index]))
         else:
-            # if (match_info["info"]["game_type"] == "Ranked") or (match_info["info"]["game_mode"] == "SeasonalTournamentLobby"):
-            # la idea de la linea de arriba es filtrar la info que obtengo, ya que solo me interesan la info relacionada a matchs 
-            # que sean competitivos (Ranked o SeasonalTournamentLobby (Torneos)). Sin filtrar igual estoy guardando info relacionada a 
-            # match en partidas normales o cuando se juega en contra de bots.
-            #if (match_info[0]['info']['game_type'] == 'Ranked') or (match_info[0]["info"]["game_mode"] == "SeasonalTournamentLobby"):
             print('Guardando datos relacionados al id: {}'.format(match_list[21*id_index + index]))
             temp_list[0][api_token_var_list[index]].append(match_info[0])
     

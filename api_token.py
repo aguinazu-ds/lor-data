@@ -1,10 +1,10 @@
 #Reemplaza la variable api_token_var con tu actual TOKEN API de Riot
 
 api_token_var_list = [
-    'RGAPI-bd1ffbf9-d565-4725-9b89-07976047e6fc', #Bast
-    'RGAPI-9c483e6b-bf56-47f1-93e0-9a0d2eb45a8f', #aegriotapi1
-    'RGAPI-7a71a228-406a-43cf-b7d4-ca93a78bb0da', #aegriotapi2
-    'RGAPI-3fde2ac2-4354-4d2c-916d-f27d6472ed3f', #aegriotapi3
+    'RGAPI-91ce2a87-2c64-4cc5-984b-941b887be5db', #Bast
+    'RGAPI-04d01857-8c2c-4406-903e-f8b8b3473f8e', #aegriotapi1
+    'RGAPI-0505be85-d26c-4135-ada0-b55619d2eab0', #aegriotapi2
+    'RGAPI-8688014d-70be-4cab-b6b0-793063df4027', #aegriotapi3
     'RGAPI-bde8abd9-cbf5-49c1-81b6-fc4b5e1d22ec', #aegriotapi4
     'RGAPI-598c5955-71ba-4f96-9a7f-0c12bf2ff2f7', #aegriotapi5
     'RGAPI-5a7b3d44-6ec9-4ae3-b3a6-3101ab8a3623', #aegriotapi6
@@ -20,8 +20,8 @@ api_token_var_list = [
     'RGAPI-d972ddea-f18d-45ab-b64d-65254e788692',
     'RGAPI-78f11f2e-d76e-4013-be37-b80567841f65',
     'RGAPI-8ad6f29f-a3b3-47df-a307-e4e4cee57f40',
-    'RGAPI-9efe6627-70e5-4cad-be7c-6e37d5701d57',
-    'RGAPI-a09ddb90-33f7-4d4e-944b-95df6f84359f'
+    'RGAPI-2aa2679b-4e65-4b93-8e79-7fac999c613d',
+    'RGAPI-7d4d9b3e-8273-4392-9628-5e02cdbe7c44'
 ]
 
 
