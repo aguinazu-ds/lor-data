@@ -1,5 +1,3 @@
-import json
-import requests
 import time
 import aiohttp
 import asyncio
@@ -17,7 +15,7 @@ set_time = time.strftime("%Y%m%d-%H%M%S")
 print('Cargando match list desde data/lor-match-data/match-lists/...')
 print("\n")
 # Cargamos el archivo que contiene los match ids de los que queremos obtener información
-match_list = readData('data/lor-match-data/match-lists/master-match_list-20220212-232705.json')
+match_list = readData('data/lor-match-data/match-lists/masterMatchList(p2)-20220215-225658.json')
 # match_list = match_list_data_load[4099:]
 
 
@@ -36,7 +34,7 @@ async def main():
 
 
 # Función que queremos correr de manera asincronica, sin esperar a que cada API call termine.
-async def get_match_info(session, keys, index):
+async def get_match_info(session, key, index):
 
     #Restricción para que la función solo se llame 1 vez cada 1.5 segundos y así no pasar el limite de 100 llamadas cada 120 segundos que impone riot.
     @sleep_and_retry
@@ -56,16 +54,19 @@ async def get_match_info(session, keys, index):
 
     temp_list = []
 
-    temp_list.append({'{}'.format(api_token_var_list[index]) : []})
+    temp_list.append({'{}'.format(key) : []})
 
     for id_index in range(len(match_list)):
-        counter= 21*id_index + index + 1
 
-        if (21*id_index + index) > len(match_list) -1:
-            print('Termina API KEY {} en Paso: {}'.format(api_token_var_list[index],counter))
+        if (len(api_token_var_list)*id_index + index) > len(match_list) -1:
+            print('Termina API KEY {} en Paso: {}'.format(key,counter))
             return temp_list
 
-        match_info = await get_match_info_by_id(match_list[21*id_index + index], api_token_var_list[index])
+        counter= len(api_token_var_list)*id_index + index + 1
+
+        
+
+        match_info = await get_match_info_by_id(match_list[len(api_token_var_list)*id_index + index], key)
 
         # · El error 429, es cuando pasamos alguno de los limites que impone Riot al hacer API Calls.
         # Para las API Keys que tengo yo (21 keys), cada una tiene un límite de 1 llamada cada 20seg o 100 llamadas cada 120 seg.
@@ -82,15 +83,15 @@ async def get_match_info(session, keys, index):
         elif match_info[0] == 404:
             print("\n")
             print('Error en paso nº{}'.format(counter))
-            print('Error 404, no se encontro información relacionada al id {}'.format(match_list[21*id_index + index]))
+            print('Error 404, no se encontro información relacionada al id {}'.format(match_list[len(api_token_var_list)*id_index + index]))
             pass
         elif match_info[0] == 403:
             print("\n")
             print('Error 403 en paso nº{}'.format(counter))
-            print('Revisar vigencia API Key {}'.format(api_token_var_list[index]))
+            print('Revisar vigencia API Key {}'.format(key))
         else:
-            print('Guardando datos relacionados al id: {}'.format(match_list[21*id_index + index]))
-            temp_list[0][api_token_var_list[index]].append(match_info[0])
+            print('Guardando datos relacionados al id: {}'.format(match_list[len(api_token_var_list)*id_index + index]))
+            temp_list[0][key].append(match_info[0])
     
     return temp_list
 
